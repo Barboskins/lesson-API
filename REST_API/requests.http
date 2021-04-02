@@ -1,0 +1,25 @@
+
+
+@baseURL = http://127.0.0.1:8000/api/v3
+
+
+GET {{baseURL}}/comments/
+
+###
+
+POST {{baseURL}}/comments/
+
+{
+    "author":"Coder",
+    "text": "doota"
+}
+###
+
+PUT {{baseURL}}/comments/
+
+{
+    "author":"Coder",
+    "text": "test"
+}
+
+###

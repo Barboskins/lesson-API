@@ -1,0 +1,23 @@
+@baseURL = http://127.0.0.1:8000/api/v1
+#Content-Type: application/json
+
+GET {{baseURL}}/orders/
+###
+
+POST {{baseURL}}/orders/
+Content-Type: application/json
+
+{
+    "name":"Our new order",
+    "positions":[{"product_id":1, "quantity":2},
+    {"product_id":2, "quantity":4}]
+   
+}
+###
+
+PUT {{baseURL}}/comments/
+
+{
+    "author":"Coder",
+    "text": "test"
+}
